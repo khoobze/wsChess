@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://server.webservice.javaee.tp.m1/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://server.webservice.javaee.tp.m1/">
+
+<xs:element name="createEchiquier" type="tns:createEchiquier"/>
+
+<xs:element name="createEchiquierResponse" type="tns:createEchiquierResponse"/>
+
+<xs:element name="getEchiquier" type="tns:getEchiquier"/>
+
+<xs:element name="getEchiquierResponse" type="tns:getEchiquierResponse"/>
+
+<xs:element name="getHistorique" type="tns:getHistorique"/>
+
+<xs:element name="getHistoriqueResponse" type="tns:getHistoriqueResponse"/>
+
+<xs:element name="getJoueur" type="tns:getJoueur"/>
+
+<xs:element name="getJoueurResponse" type="tns:getJoueurResponse"/>
+
+<xs:element name="getParties" type="tns:getParties"/>
+
+<xs:element name="getPartiesResponse" type="tns:getPartiesResponse"/>
+
+<xs:element name="joinEchiquier" type="tns:joinEchiquier"/>
+
+<xs:element name="joinEchiquierResponse" type="tns:joinEchiquierResponse"/>
+
+<xs:element name="joinParties" type="tns:joinParties"/>
+
+<xs:element name="joinPartiesResponse" type="tns:joinPartiesResponse"/>
+
+<xs:element name="loadEchiquier" type="tns:loadEchiquier"/>
+
+<xs:element name="loadEchiquierResponse" type="tns:loadEchiquierResponse"/>
+
+<xs:element name="login" type="tns:login"/>
+
+<xs:element name="loginResponse" type="tns:loginResponse"/>
+
+<xs:element name="movePiece" type="tns:movePiece"/>
+
+<xs:element name="movePieceResponse" type="tns:movePieceResponse"/>
+
+<xs:element name="removePartie" type="tns:removePartie"/>
+
+<xs:element name="removePartieResponse" type="tns:removePartieResponse"/>
+
+<xs:element name="saveEchiquier" type="tns:saveEchiquier"/>
+
+<xs:element name="saveEchiquierResponse" type="tns:saveEchiquierResponse"/>
+
+<xs:element name="subscribe" type="tns:subscribe"/>
+
+<xs:element name="subscribeResponse" type="tns:subscribeResponse"/>
+
+<xs:complexType name="joinEchiquier">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="joinEchiquierResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getJoueur">
+<xs:sequence>
+<xs:element name="userId" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getJoueurResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveEchiquier">
+<xs:sequence>
+<xs:element name="userId" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveEchiquierResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getParties">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getPartiesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createEchiquier">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="createEchiquierResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="subscribe">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="subscribeResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getEchiquier">
+<xs:sequence>
+<xs:element name="userId" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getEchiquierResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="login">
+<xs:sequence>
+<xs:element name="username" type="xs:string" minOccurs="0"/>
+<xs:element name="password" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loginResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="joinParties">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="joinPartiesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="movePiece">
+<xs:sequence>
+<xs:element name="userId" type="xs:int"/>
+<xs:element name="from" type="xs:string" minOccurs="0"/>
+<xs:element name="to" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="movePieceResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loadEchiquier">
+<xs:sequence>
+<xs:element name="id" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loadEchiquierResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHistorique">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHistoriqueResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removePartie">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="removePartieResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

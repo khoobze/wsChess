@@ -1,0 +1,17 @@
+Souadji Mohammed El Amine:
+--------------------------
+
+Chemin vers le serveur: http://localhost:8080/wsEchiquierServer/RequestHandler
+Chemin vers le client: http://localhost:8080/wsEchiquierClient/
+
+*Remarque:
+---------
+Veuillez vous modifier le chemin de la basse de donner dans la classe  "m1.tp.javaee.webservice.server.RequestHandler" (ligne 41), car je n'ai pas pu utiliser un chemin relatif.
+
+*Compte utilisateur pour le client:
+username	password
+--------	--------
+player1		player1
+player2		player2
+player3		player3
+player4		player4

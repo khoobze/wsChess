@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/wsEchiquierServer/RequestHandler?wsdl" uri="src/conf/xml-resources/web-service-references/RequestHandler_1/wsdl/localhost_8080/wsEchiquierServer/RequestHandler.wsdl"/>
+    <system systemId="http://localhost:8080/wsEchiquierServer/RequestHandler?WSDL" uri="src/conf/xml-resources/web-service-references/RequestHandler_2/wsdl/localhost_8080/wsEchiquierServer/RequestHandler.wsdl"/>
+    <system systemId="http://localhost:8080/wsEchiquierServer/RequestHandler?xsd=1" uri="src/conf/xml-resources/web-service-references/RequestHandler_2/wsdl/localhost_8080/wsEchiquierServer/RequestHandler.xsd_1.xsd"/>
+</catalog>
